@@ -1,0 +1,76 @@
+.work {
+  padding: 0 1rem 0 3rem;
+  display: flex;
+  height: 90%;
+  margin-bottom: 20rem;
+}
+.l-work {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.l-work > :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.l-work > :nth-child(2) {
+  color: var(--gray);
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.r-wrok {
+  position: relative;
+}
+.w-mainCircle {
+  left: 20rem;
+  position: relative;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: #fff;
+}
+.w-mainCircle > * {
+  position: absolute;
+}
+.w-mainCircle > :nth-child(1) {
+  left: 4rem;
+  transform: scale(115%);
+  top: -2.7rem;
+}
+.w-mainCircle > :nth-child(2) {
+  transform: scale(25%);
+  top: 3rem;
+  left: 3.5rem;
+}
+.w-mainCircle > :nth-child(3) {
+  transform: scale(50%);
+  right: 5.5rem;
+  top: 2.5rem;
+}
+@media screen and (max-width: 480px) {
+  .work {
+    flex-direction: column;
+    height: 55rem;
+    padding: 0;
+    gap: 2rem;
+  }
+  .r-work {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    transform: scale(0.7);
+  }
+  .w-mainCircle {
+    position: static;
+  }
+  .w-mainCircle > :nth-child(2) {
+    left: 4rem;
+  }
+  .w-mainCircle > :nth-child(3) {
+    left: -7rem;
+  }
+}
